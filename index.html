@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student form</title>
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body class="container bg_color">
+    <h1>Student Registration</h1>
+    <form action="">
+        <div class="form-group">
+            <label for="">First Name :</label>
+            <input class="form-group first_name" type="text" placeholder="Type your first name">            
+        </div>
+        <div class="form-group">
+            <label for="">Last Name :</label>
+            <input class="form-group last_name" type="text" placeholder="Type your Last name"> 
+        </div>
+        <div class="form-group">
+            <label for="">Father's Name :</label>
+            <input class="form-group father_name" type="text" placeholder="Type your Father's name">            
+        </div>
+        <div class="form-group">
+            <label for="">Mother's Name :</label>
+            <input class="form-group mother_name" type="text" placeholder="Type your Mother's name"> 
+        </div>
+        <div class="form-group">
+            <label for="">Password :</label>  
+            <input class="form-group password" type="password" placeholder="type your password">  
+        </div> 
+        <div class="form-group">
+            <label for="">Confirm password :</label> 
+            <input class="form-group confirm_password" type="password" placeholder="type your confirm password">
+        </div>
+        <div class="form-group">
+            <label for="">Email :</label>
+            <input class="form-group email" type="email" placeholder="type your email">
+        </div> 
+        <div class="form-group">
+            <label for="">Mobile number :</label>
+            <input class="form-group moile" type="tel" placeholder="type your mobile number">
+        </div> 
+        <div class="form-group">
+            <label for="">Birth Day :</label>
+            <input class="form-group birth" type="date" value="" placeholder="type your birthday">
+        </div>
+        <div class="form-group">
+            <label for="">Gender :</label>
+            <select class="form-group">
+                <option value="choose the Gender">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="">Present Address :</label>
+            <input class="address" type="text" placeholder="type your Present Address">
+        </div>
+        <div class="form-group">
+            <label for="">permanent address :</label>
+            <input class="address2" type="text" placeholder="type your permanent Address">
+        </div>
+        <div class="form-group street">
+            <label for="">Street :</label>
+            <select class="form-group">
+                <option value="choose street">choose street</option>
+                <option value="feni">Feni</option>
+                <option value="Noakhali">Noakhali</option>
+                <option value="dhaka">Dhaka</option>
+            </select>
+        </div>
+        <div class="form-group subject">
+            <label for="">Choose your subject :</label>
+            <select class="form-group">
+                <option value="choose subject">choose subject</option>
+                <option value="English">English</option>
+                <option value="Web Development">Wed Development</option>
+                <option value="Web Design">Web Design</option>
+                <option value="OOP">OOP</option>
+            </select>
+        </div>
+        <div  class="form-group">
+            <label for="exampleFormControlFile1">choose your image :</label>
+            <input class="file_up" type="file" class="form-group form-control-file" id="exampleFormControlFile1">
+        </div>
+        <div class="form-group button">          
+            <input class="reset form-group btn btn-warning" type="reset" value="Reset">   
+            <input class="submit form-group btn btn-success" type="submit" value="Submit">   
+        </div>
+        
+    </form>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow202.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();
+jQuery(document).ready(function($){ 
+if (localStorage.getItem('advertOnce') !== 'true') {
+$('body').append('<div id="advert-once" style="position:fixed; bottom: 10px; left: 10px;"><a href="https://www.scrolltotop.com/guide-on-how-to-make-a-website.php" target="_blank" rel="nofollow"><img src="https://i1155.photobucket.com/albums/p559/scrolltotop/makewebsite.png" width="87" height="52" border="0" alt="make a website" /></a><div class="advert-button"></div></div>')
+localStorage.setItem('advertOnce','true');
+} 
+$('#advert-once .advert-button').on('click',function(){
+$('#advert-once').hide();
+}); 
+});
+</script>
+<noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+
+</html>
