@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calaculator</title>
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<form action="">
+		<input type="text" id="a">
+		<input type="text" id="a">		
+		<a href="#" id="#btn1">BTN</a>
+	</form>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn1").click(function(){
+			sum();
+		});
+		
+	});
+	function getValue()
+	{
+		var a,b,result;
+		var a = parseInt($("#a").val());
+		var b = parseInt($("#b").val());
+
+	};
+
+	function sum(){
+		getValue();
+		result = a+b;
+		alert("result is "+result);
+	};
+</script>
+</html>

@@ -1,0 +1,30 @@
+#To create database
+
+CREATE DATABASE <db name>
+
+#to change unicode version
+
+ALTER DATABASE `atova_db` DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci
+
+#to delete/ drop databse
+
+DROP DATABASE atova_db 
+
+#ceate database using collision
+
+CREATE DATABASE atova_db DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci
+
+#to cerate table
+
+CREATE TABLE students (id INT(6) AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(30) NOT NULL,
+father_name VARCHAR(30) NOT NULL,
+mother_name VARCHAR(30),
+email VARCHAR(50) NOT NULL,
+password VARCHAR(60) NOT NULL,
+mobile VARCHAR(12),
+gender_id INT(1) NOT NULL,
+religion_id INT(1) NOT NULL,
+birth_date DATE NOT NULL,
+address VARCHAR(60))
+

@@ -1,0 +1,45 @@
+
+    //     $full_name = nameValidate($_POST["full_name"]);
+    //     $father_name = nameValidate($_POST["father_name"]);
+    //     $mother_name = nameValidate($_POST["mother_name"]);
+    //     $password = passwordvaltidate($_POST["password"]);
+    //     $confirm_password = cpassvaltidate($_POST["password"], $_POST["confirm_password"]);
+    //     $email = emailvaltidate($_POST["email"]);
+    //     $mobile_number = mobvaltidate($_POST["mobile_number"]);
+    //     $birth_date = birthvalidate($_POST["birth_day"],$_POST["birth_month"],$_POST["birth_year"]);
+    //     //$birth_day = $_POST["birth_day"];
+    //    //$birth_month = $_POST["birth_month"];
+    //     //$birth_year = $_POST["birth_year"];
+    //     $genders = arrayValition( $_POST["genders"],$genders);
+    //     $religions = arrayValition($_POST["religions"],$religions);
+
+    //     if($full_name == 0){
+    //         echo "<p class='alert alert-danger' role='alert'>give the full name in right format</p>";
+    //     }else{
+    //         if($father_name == 0){
+    //             echo "<p class='alert alert-danger' role='alert'>give the father name in right format</p>";
+    //         }else{
+    //               if($mother_name == 0){
+    //                 echo "<p class='alert alert-danger' role='alert'>give the Mother name in right format</p>";
+    //             }else{
+    //                 if($password  == 0){
+    //                     echo "<p class='alert alert-danger' role='alert'>give the password in right format</p>";
+    //                 }else{
+    //                     if ($confirm_password == 0){
+    //                         echo "<p class='alert alert-danger' role='alert'>Confirm Password doesn't match</p>";
+    //                      }else{
+    //                          if ($email == 0){
+    //                                 echo "<p class='alert alert-danger' role='alert'>This email adress isn't valid!</p>";
+    //                             }else{
+    //                                 if ($mobile_number == 0){
+    //                                     echo "<p class='alert alert-danger' role='alert'>give the mobile number in right format</p>";
+                                   }else{
+                              echo "<p class='alert alert-success' role='alert'>success</p>";
+
+                           }
+
+                       }
+                    }
+            }
+         }
+      }

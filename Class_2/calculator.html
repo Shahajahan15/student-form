@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<!-- added jquery -->
+		<script src="JS/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<h1>Calculator</h1>
+		<!-- form start -->
+		<form id="form">
+			<input type="text" id="value1" name="" value="" placeholder=""> 
+			<select id="operation">
+				<option value="">select option</option>
+				<option value="1">plus</option>
+				<option value="2">minus</option>
+				<option value="3">multiply</option>
+				<option value="4">divide</option>
+				<option value="5">Power</option>
+				<option value="6">(a+b)^2</option>
+			</select>
+			<input type="text" id="value2" name="" value="" placeholder="">
+
+			<a href="#" id="submit">calculate</a>
+
+		</form>
+		<!-- form end -->
+
+		<!-- showing result -->
+		<div id="result">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		// using jquery ready function
+		
+
+		$(function() {
+
+			
+			// if function create for myCss and myClientCss
+			var client = 0;
+
+			if(client == 0){
+				myClientCss();
+			}else{
+				myCss();
+			}
+
+			
+			
+		});
+		
+		$("#submit").click(function()
+		{
+			var value1 = parseInt($("#value1").val());
+
+			var value2 = parseInt($("#value2").val());
+
+			var operation = parseInt($("#operation").val());
+
+			//start if else statement for calculaton
+
+			if (operation == 1) {
+				var result = sumOperation(value1,value2);	
+			} else if (operation == 2) {
+				var result = minOperation(value1,value2);
+			} else if (operation == 3) {
+				var result = mulOperation(value1,value2);
+			} else if (operation == 4) {
+				var result = divOperation(value1,value2);
+			} else if(operation == 5){
+				var result = powerOperation (value1,value2);
+			}else {
+				var result = squeroperation(value1,value2);
+			};
+			// end of if else statement
+			$("#result").html(result);
+
+			
+		});
+
+
+
+		function myCss()
+		{
+			$("h1").css({
+							"text-align" : "center"
+						});
+
+			$("#form").css({
+								"width" : "500px" ,
+								"border" : "1px solid #000000",
+								"margin":"0 auto"
+							});
+			$("input").css({
+
+				"padding":"10px",
+				"margin":"20px",
+				"width":"90%",
+			});
+			$("a").css({
+				"text-decoration":"none",
+				"text-align":"center",
+				"display":"inline-block",
+			});
+			$("#result").html("0");
+			$("#result").css({
+							"text-align":"center",
+							"font-size":"20px",
+							"background-color":"red",
+							"color":"white",
+							"padding":"10px 0",
+							"width":"500px",
+							"margin":"10px auto",
+
+						});
+		}
+
+		function myClientCss()
+		{
+			$("body").css({"background-color":"teal"});
+			$("h1").css({
+							"text-align" : "center"
+						});
+
+			$("#form").css({
+								"width" : "500px" ,
+								"border" : "1px solid #000000",
+								"margin":"0 auto"
+							});
+			$("input").css({
+
+				"padding":"10px",
+				"margin":"20px",
+				"width":"90%",
+			});
+			$("select").css({
+				"width":"90%",
+				"margin":"20px",
+				"padding":"10px"
+			});
+			$("a").css({
+				"width":"90%",
+				"margin":"20px",
+				"padding":"20px",
+				"text-decoration":"none",
+				"text-align":"center"
+
+			});
+			$("#result").html("0");
+			$("#result").css({
+							"text-align":"center",
+							"font-size":"20px",
+							"background-color":"red",
+							"color":"white",
+							"padding":"10px 0",
+							"width":"500px",
+							"margin":"10px auto",
+
+			});
+		}
+		// operation of plus operation
+		function sumOperation(a,b){
+			var result = a + b;	
+			return result;			
+
+		}
+		// function for minus operatation
+
+		function minOperation(a,b){
+			var result = a - b;
+			return result;
+		}
+		// function of multiply operation
+		function mulOperation(a,b){
+			var result = a * b;
+			return result;
+		}
+		// function of divide operation
+		function divOperation(a,b){
+			var result = a / b;
+			return result;
+		}
+		// for loop function for powerOperation
+		function powerOperation(a,b){
+			var result = 1;
+			for (var i = 0; i < b; i++) {
+				result = result * a;
+			}
+			return result;
+		}// for loop function for powerOperation
+		function squeroperation (a,b){
+
+			
+			return 1;
+		}
+	</script>
+	
+</html>

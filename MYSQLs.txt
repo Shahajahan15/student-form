@@ -1,0 +1,55 @@
+#To create database
+
+CREATE DATABASE <db name>
+
+# to edit collum name.
+ALTER TABLE table_name CHANGE old_name new_name varchar blah blah blah
+#to update table
+
+UPDATE table_name SET column_name = changed_value WHERE table_name . id = id_value
+
+#to change unicode version
+
+ALTER DATABASE `atova_db` DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci
+
+#to delete/ drop databse
+
+DROP DATABASE atova_db 
+
+#ceate database using collision
+
+CREATE DATABASE atova_db DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci
+
+#to cerate table
+
+
+
+#create table for gender
+CREATE TABLE genders(
+id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+title VARCHAR(30) NOT NULL,
+status INT(1) NOT NULL
+)
+
+#CREATE TABLE FOR RELIGIONS
+
+CREATE table religion(
+id INT(11) NOT NULL AUTO_INCREMENT UNSIGNED PRIMARY KEY,
+title VARCHAR(30) NOT NULL,
+status INT(1) NOT NULL
+)
+
+
+#add genders foreign key in students mysql tables
+
+Alter table students add foreign key(gender_id)
+    references genders(id)
+
+#add religions foreign key in students mysql tables
+
+Alter table students add foreign key(religion_id)
+	references religions(id)
+
+# insert commmands for add valuse into tables
+
+INSERT INTO table_name (column_name, column_name) VALUES (value, value);
